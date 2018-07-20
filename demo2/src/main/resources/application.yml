@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: demo2-server
+eureka:
+  client:
+    serviceUrl:
+          defaultZone: http://localhost:9000/eureka/
+server:
+  port: 9002
+hystrix:
+  metrics:
+    enabled: true
+logging:
+  config: classpath:logback-spring.xml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+base-path: /

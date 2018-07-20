@@ -1,0 +1,19 @@
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/
+
+spring:
+  application:
+    name: demo1-server
+  #redis:
+   # host: 122.152.218.216
+    #port: 4249
+    #jedis:
+     # pool:
+      #  max-active: 8
+       # max-idle: 8
+        #min-idle: 0
+    #timeout: 1000ms
+    #password:
